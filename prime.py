@@ -18,9 +18,10 @@ isPrime(12) is false
 """
 from math import sqrt
 
+
 def is_prime(n):
     from math import sqrt
-    if n == 0 or n == 1:
+    if n <= 1:
         return False
 
     max_n = int(sqrt(n) + 1)
